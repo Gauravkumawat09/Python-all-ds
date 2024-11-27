@@ -1,0 +1,295 @@
+25 nov
+
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+# print("Try programiz.pro")
+# import math
+
+# # print(math.sqrt(25))
+
+# print(25**(1/2))
+# print(6>7 + 7 > 5)
+# a = int(input("enter 1 number:-"))
+# b = int(input("enter 2 number:-"))
+# c = int(input("enter 3 number:-"))
+
+# # int(input(age))
+
+# if ((a>b) and (a>c)):
+#     print("greater",a)
+    
+# elif (b>a) and (b>c): 
+#     print("greater",b)
+    
+# else:
+#     print("greater",c)
+    
+# if ((a<b) and (a<c)):
+#     print("smallest",a)
+    
+# elif (b<a) and (b<c): 
+#     print("smallest", b)
+    
+# else: 
+#     print("smallest", c)
+    
+
+email = "gau@gmail.com"
+password = "09876"
+user_email = input("enter your id :- ")
+user_password = input("enter Password :- ")
+if email == user_email and password == user_password:
+    print("welcome")
+elif email == user_email and password != user_password:
+    # print("enter password again :- ")
+    user_password = input("enter Password again :- ")
+    if password == user_password:
+        print("welcome!!!")
+    else: 
+        print("wrond Password")
+else:
+    print("invalid!!" )
+-----------------------------------------------------------------
+
+26 nov
+
+# v = ["gaurav", 1, "kt", 4,6]
+# for i in range(5):
+#     print(v[i])
+# print(v[0:6])
+# print(v[0:5:2])
+# print(v[::2])
+# print(v[::-1])
+# print(v[2:4])
+# print(v[::-3])
+# x = range(1,10)
+# y = [*x]
+# print(y)
+# pas = "123"
+# user_pass = input("enter your password")
+# while pas != user_pass:
+#     print("try More")
+#     user_pas = input("enter your pass")
+import random
+
+
+random_num = random.randint(1,100)
+print(random_num)
+
+
+user_input = int(input("Enter a Number :- "))
+# while random_num == user_input:
+#     print("Matched")
+        
+i = 2
+while random_num != user_input and i < 6:
+    
+    # user_input= int(input("Enter a Number"))
+    if user_input > random_num:
+        print("go Lower")
+        user_input= int(input("Enter a Number :- "))
+    elif user_input < random_num:
+        print("go upper")
+        user_input= int(input("Enter a Number :- "))
+    else:
+        print("go Away")
+    i += 1  
+
+
+if random_num == user_input:
+    print("Matched")
+
+if i > 6:
+    print("Lost The Game")
+-----------------------------------------------
+
+27 nov 
+
+n1 = 0
+n2 = 1
+n3 = n1
+
+num = 15
+count = 1
+
+while count < num:
+    print(n3, end=" ")
+    count += 1
+    n1, n2 = n2, n3
+    n3 = n1 + n2
+
+n1 = 0 
+n2 = 1
+n3 = n1
+for i in range(15):
+    print(n1, end=" ")
+    n3 = n1 + n2
+    n1 = n2 
+    n2 = n3
+----------------------------------------------
+Q1. 
+
+salary = float(input("Enter your salary : "))
+print("You have entered : ",salary)
+HRA = (salary * 10)/100
+DA = (salary * 5)/100
+PF = (salary * 3)/100
+if salary < 500000 :
+    tax = 0
+elif salary>=500000 and salary<1000000 :
+    tax = (salary * 10)/100
+elif salary>=1000000 and salary<2000000 :
+    tax = (salary * 20)/100
+else :
+    tax = (salary * 30)/100
+
+in_hand_salary = salary - (HRA + DA + PF + tax)
+
+print("HRA :", HRA , "DA :" ,DA ,"PF :", PF ,"Tax :", tax )
+
+print("In hand salary = ",in_hand_salary)
+
+-----------------------------------------
+Q2. 
+
+one = int(input("Enter First Angle :- "))
+second = int(input("Enter First Angle :- "))
+third = int(input("Enter First Angle :- "))
+total_sum = one + second + third
+if total_sum == 180:
+    print("it is a triangle")
+else:
+    print("it is not a triangle")
+---------------------------------------
+Q3. 
+
+cost_price = int(input("Enter Cost Price :- "))
+Selling_price = int(input("Enter Selling Price :- "))
+diff = Selling_price - cost_price
+if diff == 0:
+    print("No Profit and No Loss")
+elif diff > 0:
+    print("Profit of", diff)
+else:
+    print("Loss of",abs(diff))
+---------------------------------------
+Q4. 
+
+cm = float(input("Enter Cm :- "))
+Km = float(input("Enter Km :- "))
+USD = float(input("Enter USD :- "))
+foot = cm * 0.0328084
+print(foot, "Converted to Foot")
+miles = Km * 0.621371
+print(miles, "Converted to Foot")
+inr = USD * 84.45
+print(inr, "Converted to Foot")
+
+Q5. 
+n1 = 0 
+n2 = 1
+n3 = n1
+for i in range(10):
+    print(n1, end=" ")
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+-------------------------------
+Q6. 
+
+num = int(input("Enter the number : "))
+fact = 1
+for i in range(2,num + 1) :
+    fact = fact * i
+print(" The factorial is :",fact)
+-----------------------------------
+
+Q7. 
+
+original_num = int(input("Enter Number to be REversed :- "))
+reverse_num = 0
+while original_num > 0:
+    digit = original_num % 10
+    reverse_num = reverse_num * 10 + digit 
+    # print(original_num)
+    original_num //= 10
+    
+print(reverse_num)
+-----------------------------------
+
+Q8. 
+
+num = int(input("Enter Number :- "))
+sum_ = 0
+
+i = 0
+while i<num+1 :
+    i += 1
+    if i%5==0 :
+        continue
+    res = sum_+i
+    if res > 300 :
+        break
+    sum_ += i
+print(sum_)
+-----------------------------------------
+
+Q9. 
+
+sum = 0
+avg = 0
+count =1
+input_num = int(input("Enter number :"))
+while input_num != 0 :
+    sum = sum + input_num
+    avg = sum/count
+    input_num = int(input("Enter another number :"))
+    count += 1
+
+print("Sum = ",sum,"Average =",avg)
+-----------------------------------
+Q9. 
+
+for i in range (2000, 3201):
+    if i % 7 == 0 and i % 5 != 0:
+        print(i, end=", ")
+-------------------------------
+Q10. 
+for i in range (1000, 3001):
+    if i % 2 == 0:
+        print(i, end=", ")
+-------------------------------
+Q12. 
+
+num = int(input("Enter a Number :- "))
+if num % 2 == 0 or num % 3 == 0 or num % 5 == 0 or num % 7 == 0:
+    print("not prime")
+else:
+    print("prime") 
+----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
