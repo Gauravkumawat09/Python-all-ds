@@ -272,6 +272,22 @@ else:
 
 
 
+nov -29 
+
+
+def gkt(*gaurav):
+    # * arg can take multiple agruments
+    for name in gaurav:
+        print(name)
+
+gkt("a","b",1,2,3)
+
+--------------------------------------
+
+
+
+
+
 
 
 
