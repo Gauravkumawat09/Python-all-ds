@@ -320,6 +320,44 @@ for num in range(1000,3000):
     print(num,end=" ")
 --------------------------------
 
+Dec - 04
+
+Q. Number Pallindrome 
+
+original_num = int(input("Enter a Number :- "))
+Reverse_ = 0
+digit = 0
+org = original_num
+while original_num > 0:
+    digit = original_num % 10
+    Reverse_ = Reverse_ * 10 + digit
+    original_num //= 10
+print(Reverse_)
+# print(original_num)
+if org == Reverse_ :
+    print("true")
+else:
+    print("false")
+--------------------
+
+Q. string palindrome 
+
+strr = "madam"
+strr2 = ""
+strr3 = strr
+n = len(strr)
+for ch in range(n-1,-1,-1):
+    strr2 += strr[ch]
+# print(strr)
+# print(strr2)
+# print(strr3)
+if strr3 == strr2:
+    print("true")
+else:
+    print("false")
+    
+    
+
 
 
 
