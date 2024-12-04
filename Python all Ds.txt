@@ -320,7 +320,7 @@ for num in range(1000,3000):
     print(num,end=" ")
 --------------------------------
 
-Dec - 04
+Dec - 03
 
 Q. Number Pallindrome 
 
@@ -356,9 +356,45 @@ if strr3 == strr2:
 else:
     print("false")
 ---------------------
-    
-    
 
+DEC - 4
+
+s = "hi hi hi how are you hi"
+n = len(s)
+count = 0
+for i in range(0,n):
+    if s[i]=='h' and s[i+1]=='i':
+        count += 1
+        
+print(count)
+-----------------
+
+temp=""
+list56=[]
+for char in sentence:
+  if char!=" ":
+    temp+=char
+  else:
+    list56.append(temp)
+    temp=""
+print(list56)
+counter=0
+for ele in list56:
+  if ele=="hi":
+    counter+=1
+print(counter)
+-----------------
+    
+Memory Aaddresses------
+list06 = [12,4,34,35,45]
+print(id(list06))
+
+list05 = list06
+print(id(list05))
+
+list07 = list06.copy()
+print(id(list07))
+---------------------------
 
 
 
