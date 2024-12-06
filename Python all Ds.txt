@@ -413,6 +413,66 @@ for ele in list02:
 print(list03) 
 ----------------------------------
 
+12 DEC - 2024
+
+d1 = {
+    "orange" : 10,
+    "Apple"  : 50,
+    "Mango"  : 40
+}
+print(d1)
+print(d1.keys())
+print(d1.values())
+print(d1["Apple"])
+
+for ele in d1:
+    print(ele, "-->", d1[ele])
+    
+    
+for ele in d1:
+    if d1[ele] == 40:
+        print(ele)
+        
+for ele in d1:
+    if ele == "Apple":
+        print(d1[ele])
+        
+d1["kiwi"] = 10
+print(d1)
+
+st1 = "aksjdhfiqwoeiryzmcxnbqeiouqeioquqeiou"
+dict = {"a":0,"e":0,"i":0,"o":0,"u":0}
+for char in st1:
+    if char == "a" or char == "A":
+        dict["a"] += 1
+    elif char == "e" or char == "E":
+        dict["e"] += 1
+    elif char == "i" or char == "I" :
+        dict["i"] += 1
+    elif char == "o" or char == "O" :
+        dict["o"] += 1
+    elif char == "u" or char == "U" :
+        dict["u"] += 1
+
+print(dict)
+
+vowel = "aeiouAEIOU"
+d3 = {}
+for ele in st1:
+    if ele in vowel:
+        if ele in d3:
+            d3[ele]+=1
+        else:
+          d3[ele]=1
+print(d3)
+
+name = ['a', 'b', 'c', 'd']
+marks = [10,20,30,40]
+dic = {}
+for i in range(4):
+    dic[name[i]] = marks[i]
+print(dic)
+-------------------------------
 
 
 
