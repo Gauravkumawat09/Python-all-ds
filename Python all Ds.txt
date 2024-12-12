@@ -474,6 +474,17 @@ for i in range(4):
 print(dic)
 -------------------------------
 
+Dec - 12/12/24
+
+Exception Handling ------ 
+
+try:
+  with open("gaurav.txt", 'r') as f:
+    print(f.read())
+except FileNotFoundError as e:
+  print(e)
+------------------------------
+
 
 
 
