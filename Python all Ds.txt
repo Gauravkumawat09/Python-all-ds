@@ -484,11 +484,44 @@ try:
 except FileNotFoundError as e:
   print(e)
 ------------------------------
+try:
+  with open("gaurav.txt", 'r') as f:
+    print(f.read())
+except FileNotFoundError as e:
+  with open("gaurav.txt", 'w') as f:
+    print(f.write("a"))
 
 
+------------------------------------
 
 
+try:
+  with open("gaurav.txt", 'r') as f:
+    print(f.read())
+  list34 = [1,2,3,4]
+  print(list34[20])
+except FileNotFoundError as a:
+    print(a)
+except IndexError:
+  print("out of range")
 
+-------------------------------------------
+
+try:
+  with open("gaurav.txt", 'r') as f:
+    print(f.read())
+  list34 = [1,2,3,4]
+  i = int(input("Enter index: -"))
+  print(list34[i])
+  x = int(input("enter first num :- "))
+  y = int(input("enter second num :- "))
+  print(x/y)
+except FileNotFoundError as a:
+    print(a)
+except IndexError:
+  print("out of range")
+except ZeroDivisionError:
+  print("Erorr aari h")
 
 
 
