@@ -522,6 +522,19 @@ except IndexError:
   print("out of range")
 except ZeroDivisionError:
   print("Erorr aari h")
+--------------------------------------
+
+Types of Decorators---
+
+Function Decorators
+
+Modify the behavior of a single function.
+Class Decorators
+
+Modify the behavior of a class.
+Built-in Decorators
+
+Python provides built-in decorators like @staticmethod, @classmethod, and @property.
 
 
 
