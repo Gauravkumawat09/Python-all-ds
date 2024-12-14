@@ -556,6 +556,38 @@ say_hello()
 OOps----
 
 
+class Animal:
+    
+    def __init__(self, name, features):
+        self.name = name
+        self.features = features
+    def eat(self):
+        print("I am Eating")
+
+        
+ani1 = Animal("Lion", "Roar")
+print(ani1.name)
+print(ani1.features)
+
+ani2 = Animal("Tiger", "Fast")
+print(ani2.name)
+print(ani2.features)
+
+ani3 = Animal("jiraffe", "Height")
+print(ani3.name)
+print(ani3.features)
+
+ani4 = Animal("Dog", "Loyalty")
+print(ani4.name)
+print(ani4.features)
+
+ani4.eat()
+
+a1 = Animal('No', 4)
+a1.features
+a1.eat()
+------------------------------------
+
 
 
 
