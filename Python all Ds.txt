@@ -588,7 +588,39 @@ a1.features
 a1.eat()
 ------------------------------------
 
+Inheritance and Encapsulisation
 
+class Animal:
+  def __init__ (self,name,age):
+    self.name = name
+    self.age = age
+
+  def eat(self):
+    return "I am eating"
+  def age_up(self):
+    self.age += 1
+  def retirement(self):
+    self.age_up()
+    if self.age>=10:
+      print("ram nam!!")
+    else:
+      print("baad me aana")
+
+
+class Lion(Animal):
+  def __init__(self,name,age,mane_color):
+    super().__init__(name,age)
+    self.mane_color=mane_color
+  def lion_food(self):
+    return super().eat()
+  def eat(self):
+    return super().eat() + " Meat of the Deer"
+  def age_up(self):
+    return super().age_up()
+  def retirement(self):
+    return super().retirement()
+
+-------------------------------------------------
 
 
 
