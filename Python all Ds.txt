@@ -586,7 +586,8 @@ ani4.eat()
 a1 = Animal('No', 4)
 a1.features
 a1.eat()
-------------------------------------
+
+----------------------------------------
 
 Inheritance and Encapsulisation
 
