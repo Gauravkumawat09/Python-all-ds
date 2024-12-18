@@ -624,11 +624,15 @@ class Lion(Animal):
 -------------------------------------------------
 
 
+Magic Function in Python ------ 
+
+def __str__ (magic Function)
 
 
 
 
-
+OCR model tkk sir ne kia huava  h 
+Large lang model
 
 
 
