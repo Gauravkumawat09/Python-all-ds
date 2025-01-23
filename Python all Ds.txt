@@ -733,5 +733,7 @@ print(f"Running probabilities of heads: {running_probabilities}")
 
 functional ke liye pyplot and object oriented ke liye axis 
 
+Normalization in python hum krtee h same axis prr aane ke liyee bcz sometimes axis are differents
+
 
         
