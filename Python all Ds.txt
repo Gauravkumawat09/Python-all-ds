@@ -740,3 +740,8 @@ probability distribution are the functions that is used to calculate possible ou
 
 PMF - probability mask function 
 PDF - probability density function
+
+
+Recursion ---
+
+
