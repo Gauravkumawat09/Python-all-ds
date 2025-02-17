@@ -736,4 +736,7 @@ functional ke liye pyplot and object oriented ke liye axis
 Normalization in python hum krtee h same axis prr aane ke liyee bcz sometimes axis are differents
 
 
-        
+probability distribution are the functions that is used to calculate possible outcomes
+
+PMF - probability mask function 
+PDF - probability density function
