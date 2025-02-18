@@ -751,3 +751,4 @@ def sum2(list1):
     else:
         return list1[0] + sum2(list1[1:]);
 print(sum2(list1))
+------------------------------------------
