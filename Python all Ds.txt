@@ -752,3 +752,18 @@ def sum2(list1):
         return list1[0] + sum2(list1[1:]);
 print(sum2(list1))
 ------------------------------------------
+
+def fibonacci(n):
+    # Base case: return n if n is 0 or 1
+    if n <= 1:
+        return n
+    else:
+        # Recursive case: return the sum of the two preceding numbers
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Example usage:
+n_terms = 10  # Number of terms in the Fibonacci series
+
+# Print the Fibonacci series
+for i in range(n_terms):
+    print(fibonacci(i))
